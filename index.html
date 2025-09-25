@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEasy</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 
 </head>
@@ -16,8 +17,23 @@
                 <div class="logo">
                     <h2>ShopEasy</h2>
                 </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for ShopEasy" id="searchInput"/>
+                    <button onclick="searchproducts()"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="nav-icons">
+                    <div class="user-account">
+                        <i class="fas fa-user"></i>
+                        <span>Login</span>
+                    </div>
+                    <div class="cart" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cartCount">0</span>
+                    </div>
+                </div>
             </div>
         </nav>
      </header>
+     <!-- Categories -->
 </body>
 </html>
